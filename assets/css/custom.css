@@ -20,12 +20,58 @@
 
 body {
     font-family: "Inter";
+    background-color: #e6ddef;
+    color:black;
 }
+
+a {
+    color: #ed5a15;
+}
+a:visited {
+    color: #ed5a15;
+}
+
+.site-nav .page-link {
+    color:#ed5a15;
+}
+
+.highlighter-rouge .highlight {
+    background: #e9e6e2;
+    border-radius: 10px;
+    box-shadow: 3px 5px 3px #9469b7;
+}
+
+.site-title:visited {
+    color:inherit;
+}
+
+.site-header, .site-footer {
+    border: none;
+}
+
 
 .site-title, .page-heading, .post-link, .page-link, .post-title, h1, h2, h3 {
     font-family: "Quilon-Medium";
+    color: #9469b7;
 }
+.post-meta {
+    background-color:#9469b7;
+    color: #f8f5ed;
+    border-radius: 4px;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: "Quilon-Regular";
+}
+
 
 code {
     font-family: "Sono";
+    background: none;
+    
+}
+
+p img {
+    border-radius: 10px;
+    box-shadow: 3px 5px 3px #9469b7;
 }
