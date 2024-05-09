@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "catnipped's log"
+title: "log: catnipped"
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi! This is my website.
+  My name is Ossian Borén, I'm a game designer and developer. By day I am working on at [Thunderful Games], and on my free time I work on my own few game ideas and projects, using the moniker `catnipped`. This blog is where I write about those projects!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "catnipped.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: catnipped
