@@ -1,77 +1,86 @@
 @import 'quilon.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sono:wght@200..800&display=swap');
+@import 'callingcoderegular.css';
+@import url('https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
 
-  .sono-normal {
-    font-family: "Sono", monospace;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-      "MONO" 1;
-  }
-  .inter-normal {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:
-      "slnt" 0;
-  }
+.radio-canada-big-normal {
+	font-family: "Radio Canada Big", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
 
 body {
-    font-family: "Inter";
-    background-color: #e6ddef;
-    color:black;
+	font-family: "Radio Canada Big";
+	background-color: #e6ddef;
+	color: rgb(54, 24, 42);
 }
 
 a {
-    color: #ed5a15;
+	color: #ed5a15;
 }
+
 a:visited {
-    color: #ed5a15;
+	color: #ed5a15;
 }
 
 .site-nav .page-link {
-    color:#ed5a15;
+	color: #ed5a15;
 }
 
 .highlighter-rouge .highlight {
-    background: #e9e6e2;
-    border-radius: 10px;
-    box-shadow: 3px 5px 3px #9469b7;
+	background: #e9e6e2;
+	border-radius: 10px;
+	box-shadow: 3px 5px 3px #9469b7;
+
+	.k,
+	.kd,
+	.nf {
+		font-weight: 200;
+	}
 }
+
+
 
 .site-title:visited {
-    color:inherit;
+	color: inherit;
 }
 
-.site-header, .site-footer {
-    border: none;
+.site-header,
+.site-footer {
+	border: none;
 }
 
 
-.site-title, .page-heading, .post-link, .page-link, .post-title, h1, h2, h3 {
-    font-family: "Quilon-Medium";
-    color: #9469b7;
+.site-title,
+.page-heading,
+.post-link,
+.page-link,
+.post-title,
+h1,
+h2,
+h3 {
+	font-family: "Quilon-Medium";
+	color: #9469b7;
 }
+
 .post-meta {
-    background-color:#9469b7;
-    color: #f8f5ed;
-    border-radius: 4px;
-    display: inline-block;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-family: "Quilon-Regular";
+	background-color: #9469b7;
+	color: #f8f5ed;
+	border-radius: 4px;
+	display: inline-block;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-family: "CallingCodeRegular";
 }
 
 
 code {
-    font-family: "Sono";
-    background: none;
-    
+	font-family: "CallingCodeRegular";
+	background: none;
+
 }
 
 p img {
-    border-radius: 10px;
-    box-shadow: 3px 5px 3px #9469b7;
+	border-radius: 10px;
+	box-shadow: 3px 5px 3px #9469b7;
 }
