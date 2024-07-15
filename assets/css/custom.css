@@ -39,8 +39,6 @@ a:visited {
 	}
 }
 
-
-
 .site-title:visited {
 	color: inherit;
 }
@@ -49,7 +47,6 @@ a:visited {
 .site-footer {
 	border: none;
 }
-
 
 .site-title,
 .page-heading,
@@ -73,14 +70,33 @@ h3 {
 	font-family: "CallingCodeRegular";
 }
 
-
 code {
 	font-family: "CallingCodeRegular";
 	background: none;
+}
 
+p {
+	color: #733c9f;
+	transition: 1s;
+}
+
+p:hover {
+	color: rgb(54, 24, 42);
 }
 
 p img {
 	border-radius: 10px;
 	box-shadow: 3px 5px 3px #9469b7;
+	height: auto;
+	width: auto;
+	transition: 1s;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	max-width: 90%;
+	margin-right: 10%;
+	background: whitesmoke;
+}
+
+p:hover img {
+	box-shadow: 0 0 0 #9469b700;
 }
