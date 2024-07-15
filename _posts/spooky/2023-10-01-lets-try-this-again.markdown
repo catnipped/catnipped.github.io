@@ -1,10 +1,12 @@
 ---
 layout: post
-title:  "Archive: Let's try this again"
+title:  "Archive: Spooky Investigation Game"
 date:   2023-10-01 12:00:00 +0200
 categories: spooky
 ---
 **[This post was originally posted in google document in October 2023]**
+
+## Let's try this again
 
 This will be a kind of designer diary for this game. I’m not sure how far the project will go, or if it will turn out any good but here we go. This is also the second time writing this first entry, so hopefully it will turn out better than the one that got lost…
 
