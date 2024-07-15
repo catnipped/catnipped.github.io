@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A puzzle game, the story so far..."
+title:  "A logic puzzle game, the story so far..."
 date:   2024-07-15 12:00 +0200
 categories: logicpuzzle
 ---
@@ -36,13 +36,52 @@ So yeah, an idea for a "picross-like" with some twists started to form:
 
 - The player should be able to fairly easy meet the requirements to "finish" the puzzle, but can optimise the solution. This means that puzzles need to be quite flexible, without single solution.
 - The game should have a meta progression layer that ties into the logic puzzling, including optional objectives.
-- The biggest change from Picross, would be that the player instead of marking spaces, would place polyomino tiles (think *Tetris*) on the grid.
+- The biggest change from Picross, would be that the player instead of marking spaces, would place polyomino tiles (think *Tetris*) on the grid, and these tiles would have different added rules and effects (like the articles in Fit to Print).
 
-## The journey with picotron
+## The journey with Picotron
+
+I won't go into detail about Picotron in this log, but the short is that Picotron is a "fantasy console", basically an old school gamedev environment that can also be used to play any of the games (or "carts") made with it. Fantasy consoles generally have some enforced restrictions of what games you can make in terms of graphics and processing power, to limit the scope of what you're making. The biggest upside to this is that they are generally approchable and easy to use and allow for very fast iteration (no build times).
+
+When I started out with this project, I focused on getting to the point where a player could fill out a puzzle with polyomino tiles.
+
+### The first days of development
+
+![First gif from prototype](/assets/puzzlegame/2024-04-20-first-steps.gif)
+Placing tiles with collision checks.
+
+![Level editor](/assets/puzzlegame/2024-04-27-level-editor.gif)
+![Level editor](/assets/puzzlegame/2024-04-27-level-editor.png)
+I wrote some code that that turns sprites into picross puzzles, and a basic version of the evaluator that checks if puzzle has been solved.
+
+![Rotating and deleting tiles](/assets/puzzlegame/2024-04-28-rotating-deleting.gif)
+I then added the ability to rotate tiles, and to switch modes so you could remove placed tiles. Here you can also see a first version of a kind "score counter" based on what tiles you place. The idea is that bigger tiles, which are harder to fit, are worth more points.
+
+![Marking empty spaces](/assets/puzzlegame/2024-04-29-2-evaluating.gif)
+Every picross-like needs a way to mark which spaces must be empty, so I added another mode for that (-).
+
+![Changed UI](/assets/puzzlegame/2024-05-05-ui.gif)
+I made a "toolbox" where you can inspect and switch which tile to place, and UI to show which tool you're currently using (inspect, place, erase, or mark empty)
 
 ## Conclusions so far
 
+![recent screenshot of puzzle game](/assets/puzzlegame/2024-07-15-screenshot.png)
+Here is how the game looks so far. A theme has started to form, of being some kind of artificer, where each puzzle is a circuitboard the player needs to fill out with components. Components would cost money to place (or rather, would add up to a bill the player needs to pay at some point), and each components would generate energy or **compute** that, in the end, would get the player more money, hopefully getting a profit.
+
+I got some small ideas for a name, but nothing has stuck. The best one so far is *Electrojunk*, the theme being that you are some kind of electronic scrapyard worker, peicing together cool new circuits out of old parts, a "junk punk". But since the word junk is slang for genitals... I think i'll try to find something better.
+
+![electrojunk logo](/assets/puzzlegame/electrojunk.png)
+
+I have identified already some problems with where the current prototype is, the main one being that the picross puzzles need to be quite simple so the player can focus on the optimisation puzzle. This then causes the picross "layer" to be quite quick and dull. I think I might need to rethink how I want to portray the picross puzzle. And I would like to try something that is initially much simpler, adding row and column restrictions in some other way. We'll see!
+
 ### What's next
+
+I've not worked on the game for a couple of months now, and it will likely be some time before I get back to it. Part of the reason for writing this devlog is so coming back will be easier!
+
+Right now I'm excited by the prospect of doing away with the picross numbers, to focus on effecient tile laying, maybe even turning the level editor into creating the circuit board shape instead. I really need to "find the fun", which I believe is here, but maybe not in its current shape.
+
+Another thing I'm looking forward to is designing and implementing that meta progression layer: optional objectives, an economy of tile prices, electricity usage (adding "battery" tiles), and "compute" generation.
+
+Anyhow, thanks for reading! I hope I get back into this project in the future!
 
 [Picotron]:https://www.lexaloffle.com/picotron.php
 [Fit to Print]:https://boardgamegeek.com/boardgame/352574/fit-to-print
